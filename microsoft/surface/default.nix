@@ -7,7 +7,7 @@
   services.udev.packages = [ pkgs.surface-control ];
   systemd.services.iptsd = {
     description = "IPTSD";
-    script = "${pkgs.iptsd}/bin/iptsd";
+    script = "${pkgs.unstable.iptsd}/bin/iptsd";
     wantedBy = [ "multi-user.target" ];
   };
 }
